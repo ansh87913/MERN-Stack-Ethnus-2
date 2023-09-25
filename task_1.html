@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            display: block;
+            background-color: rgb(0, 191, 255);
+            text-align: center;
+            font-weight: lighter;
+            padding: 0px;
+            margin: 0px;
+        }
+        .bar{
+            display: flex;
+            background-color: rgb(168, 168, 168);
+            flex-direction: row;
+        }
+        .bar>*{
+            flex-basis: 150px;
+        }
+        .last>*{
+            padding: 0px;
+            margin: 0px;
+        }
+        .last{
+            display: grid;
+            grid-template-columns: 1200px auto;
+            grid-template-rows: repeat(2,650px);
+            text-align: center;
+        }
+        #white{
+            flex-basis: 100;
+        }
+        #grey{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ethnus Layout</h2>
+    <div class="bar">
+        <p>HOME</p>
+        <p>MENU</p>
+        <p>ABOUT</p>
+        <p style="padding-right: 700px;">CONTACT</p>
+        <p>SIGNUP</p>
+        <p>LOGIN</p>
+    </div>
+    <div class="last">
+        <p id="white">Write your content here</p>
+        <p id="grey">This is</p>
+    </div>
+</body>
+</html>

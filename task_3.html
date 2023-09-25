@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <style>
+        .bar{
+            display: flex;
+            justify-content: center;
+            height: 8vh;
+            align-items: center;
+        }
+        .bar>*{
+            flex-basis: 150px;
+            cursor: pointer;
+        }
+        #grey{
+            color: rgb(196, 196, 196)
+        }
+        .content{
+            text-align: center;
+        }
+        .pricing-container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            height: 30vh;
+            align-items: center;
+        }
+        .pricing-plan{
+            flex-basis: 250px;
+            text-align: center;
+            border: 1px solid rgb(186, 186, 186);
+        }
+        .plan-title{
+            font-size: x-large;
+            font-weight: 800;
+            padding: 10px;
+            border: 1px solid rgb(186, 186, 186);
+        }
+        .plan-price{
+            padding: 10px;
+            font-size: xx-large;
+        }
+        .plan-features>p{
+            margin: 0px;
+        }
+        .plan-features{
+            font-size: large;
+            padding-bottom: 20px;
+        }
+        .plan-button{
+            cursor: pointer;
+            margin-bottom: 17px;
+            border-color: rgb(0, 119, 255);
+            color: rgb(0, 119, 255);
+            border-radius: 10px;
+        }
+        .plan-button:hover{
+            background-color: rgb(0, 119, 255);
+            color: white;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="height: 80px;">
+        <a href="#" class="nav-link ps-3">
+            Company Name 
+        </a>
+        <div class="nav">
+            <a href="#" class="nav-link text-dark">Features</a>
+            <a href="#" class="nav-link text-dark">Enterprise</a>
+            <a href="#" class="nav-link text-dark">Support</a>
+            <a href="#" class="nav-link text-dark">Pricing</a>
+            <button class="btn text-info border-info me-3">Sign up</button>
+        </div>
+    </nav>
+    <hr id="grey">
+    <div class="content mb-5">
+        <p style="font-size: xx-large;">Pricing</p>
+        <p style="font-size: large;">Quicly build effective pricing table for your potential customers with this<br> Bootstrap example. It's built with default Bootstrap components and utilities<br> with little customization</p>
+    </div>
+    <br>
+    <div class="pricing-container">
+        <div class="pricing-plan">
+          <div class="plan-title">Free</div>
+          <div class="plan-price"><b>$0</b> / mo</div>
+          <div class="plan-features">
+            <p>10 users included</p>
+            <p>2 GB of storage</p>
+            <p>Email Support</p>
+            <p>Help center access</p>
+          </div>
+          <button class="plan-button" style="padding: 10px 55px 10px 55px;">Sign up for free</a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">Pro</div>
+          <div class="plan-price"><b>$15</b> / mo</div>
+          <div class="plan-features">
+            <p>20 users included</p>
+            <p>10 GB of Storage</p>
+            <p>Priority email support</p>
+            <p>Help center access</p>
+          </div>
+          <button class="plan-button" style="padding: 10px 70px 10px 70px;">Get Started</a>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title">Enterprise</div>
+          <div class="plan-price"><b>$29</b> / mo</div>
+          <div class="plan-features">
+            <p>30 users included</p>
+            <p>15 GB of Storage</p>
+            <p>Phone and email support</p>
+            <p>Help center access</p>
+          </div>
+          <button class="plan-button" style="padding: 10px 70px 10px 70px;">Contact Us</a>
+        </div>
+      </div>
+
+
+      <footer class="pt-5 mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+
+            </div>
+            <div class="col-12 col-lg-2 col-sm-6">
+                <img src="Screenshot (472).png" height="50px">
+            </div>
+            <div class="col-12 col-lg-2 col-sm-6">
+                <p style="font-weight: bold;" class="h5">Features</p>
+                <p>Cool stuff</p>
+                <p>Random Feature</p>
+                <p>Team Feature</p>
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <p style="font-weight: bold;"  class="h5">Resources</p>
+                <p>Resoruce</p>
+                <p>Resoruce Name</p>
+                <p>Another Resource</p>
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <p style="font-weight: bold;"  class="h5">About</p>
+                <p>Team</p>
+                <p>Locations</p>
+                <p>Privacy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

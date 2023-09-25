@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Enter a string to be sorted");
+        var str_sort = sorted();
+        alert("The reverse of number " + str + " is: " + str_sort);
+        function sorted()
+        {
+            return str.split("").sort().join("");
+        }
+    </script>
+</body>
+</html>
