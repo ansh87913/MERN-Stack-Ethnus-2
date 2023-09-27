@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        img{
+            position: relative;
+            top: 50px;
+        }
+        .i1{
+            position: relative;
+            top: 50px;
+            animation-name: anime1;
+            animation-duration: 20s;
+            animation-iteration-count: 2;
+        }
+        .i2{
+            position: relative;
+            top: 50px;
+        }
+        @keyframes anime1{
+            from{
+            left:0%;
+          }
+          to{
+            left:100%;
+          }
+        }
+        .h{
+            position: absolute;
+            top: 210px;
+            left: 250px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="anime">
+        <img src="Screenshot (487).png" width="180px" height="120px">
+    </div>
+    <center>
+    <div class="h">
+        <h2 class="text-primary">Click the following buttons to handle the animations</h2>
+        <button class="me-2" onclick="animation_start()">Start</button>
+        <button onclick="animation_stop()">Stop</button>
+    </div>
+    </center>
+
+    <script>
+        function animation_start()
+        {
+            document.getElementById("anime").innerHTML = `<img class="i1" src="Screenshot (487).png" width="180px" height="120px">`
+        }
+        function animation_stop()
+        {
+            document.getElementById("anime").innerHTML = `<img class="i2" src="Screenshot (487).png" width="180px" height="120px">`
+        }
+    </script>
 </body>
 </html>
